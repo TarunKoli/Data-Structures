@@ -1,0 +1,70 @@
+Process mannagement Commands
+
+=> For starting the app 
+pm2 start "app-name"(any)
+
+=> For starting the app in development mode
+pm2 start "app-name" --watch
+
+=> For stopping the app
+pm2 stop "app-name"
+
+=> For starting the react app
+npm run build
+pm2 serve build 4040(port) --spa
+
+=> List all the processes 
+pm2 ls or pm2 status
+
+=>Delete all processes
+pm2 delete all
+
+All about git stash(kind of stack)
+It is a command mostly useful when there is untracked & modified files and we want to have these changes in other branch without getting them add & commit in current branch.
+stash is same for all branch.
+
+=> to stash the untracted and modified files
+git stash save "Any Comment"
+
+=>to get the list of stash
+git stash list
+
+=> to apply stash changes without emitting it out from stash
+git stash apply stash[0](stash name)
+
+=> to apply stash changes also emitting it from stash
+git stash pop
+
+=> to drop a specific stash 
+git stash drop stash[0](stash name)
+
+=> to remove all stash
+git stash clear
+
+=> to view all branches
+git branch --all
+
+=> to switch to origin branch(origin/branch) also make it local copy
+git switch branch-name
+
+=> to create a aliases i.e we are creating a another short name for running multiple git commands with that single alias.
+git config --global alias.ac '!git add -A && git commit -m'
+
+usage:
+git ac "message"
+
+NOTE: !(exclamation) mean we are chaining multiple commands, for single command dont add !(exclamation)
+
+=>  to view all commit logs
+git log
+
+=> to beautify git log
+git log --graph --decorate --oneline
+
+=> to revert a particular commit
+git revert (commit ID)
+
+=>  to reset all the changes in current branch and make it equal to remote branch
+git reset --hard origin/branch-name
+
+=> git bisect start (Learn)
