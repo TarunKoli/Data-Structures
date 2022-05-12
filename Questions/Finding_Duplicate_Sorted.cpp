@@ -22,6 +22,28 @@ void duplicate_sorted_1(int *a, int n)
 		}
 }
 
+
+// Method 2
+void duplicate_sorted_2(int *a, int n){
+	cout<<endl;
+	int i,j;
+	
+	for(i=0; i<n-1; i++)
+	{
+		if(a[i]==a[i+1]){
+			j=i;
+			
+			// Skipping repeating elements
+			while(a[j]==a[i])
+				j++;				
+	
+			cout<<"Duplicate : "<<a[i]<<" Count : "<<j-i<<endl;
+			i=j;
+		}
+	}
+	
+}
+
 int main(){
 	int arr[10]={3,6,8,8,10,12,15,15,15,20};
 	duplicate_sorted_1(arr,10);
