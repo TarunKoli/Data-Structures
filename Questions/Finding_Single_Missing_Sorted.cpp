@@ -17,7 +17,7 @@ using namespace std;
 //				 Only possible if the element are in sequence i.e 1 to n ]
 
 
-// Code : 
+// Code : Method 1
 
 int find_single_natural_sorted(int *a, int n){
 	int s=0,sum=0;
@@ -44,6 +44,8 @@ int find_single_natural_sorted(int *a, int n){
 // 	If any index does give the same difference with its elements then missing is (a[i]-diff)
 //		for(i=2) a[2]-2 = 4-2 = 2 (which is not equal to diff=1)
 // 		Therefore, missing=a[2]-diff = 4-1 = 3
+
+// Code : Method 2
 			
 void find_single_natural_sorted_2(int *a,int n){
 	int diff=a[0];
