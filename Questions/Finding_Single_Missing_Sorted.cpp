@@ -13,8 +13,8 @@ using namespace std;
 // Find Missing Element (missing= sum(seq)-sum(arr));
 
 // [Note : Only for sorted array
-//				 Only finds single element.
-//				 Only possible if the element are in sequence i.e 1 to n ]
+//	   Only finds single element.
+//	   Only possible if the element are in sequence i.e 1 to n ]
 
 
 // Code : Method 1
@@ -39,11 +39,11 @@ int find_single_natural_sorted(int *a, int n){
 // Where i is the index of elements
 
 // example arr[1,2,4,5];
-//		for(i=0) a[0]-0=1;
-// 		for(i=1) a[1]-1 = 2-1 = 1; and so on.....
-// 	If any index does give the same difference with its elements then missing is (a[i]-diff)
-//		for(i=2) a[2]-2 = 4-2 = 2 (which is not equal to diff=1)
-// 		Therefore, missing=a[2]-diff = 4-1 = 3
+//	for(i=0) a[0]-0=1;
+// 	for(i=1) a[1]-1 = 2-1 = 1; and so on.....
+// 	If any index does not give the same difference with its elements then missing is (a[i]-diff)
+//	for(i=2) a[2]-2 = 4-2 = 2 (which is not equal to diff=1)
+// 	Therefore, missing=a[2]-diff = 4-1 = 3
 
 // Code : Method 2
 			
